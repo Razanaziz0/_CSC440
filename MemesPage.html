@@ -1,0 +1,42 @@
+<html><head>
+        <!-- The title shows up in the browser toolbar -->
+        <title>Welcome to My website </title>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+	    
+        <div class="memes-text">
+            <h1>  
+                Welcome
+                <span id="result"></span> to my website 
+                <span style="white-space: pre-line"></span>
+                our interests are matches 
+                <span id="matches"></span> 
+                I am also intrested in { <span id="intre"></span> }
+                <script>
+                document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+                document.getElementById("matches").innerHTML=localStorage.getItem("percentage")+"%";
+                document.getElementById("intre").innerHTML=localStorage.getItem("match_in");
+    
+                
+                </script>
+                </h1>
+                </div>
+        
+        <img src="https://imagevars.gulfnews.com/2020/03/17/200317-corona-grad_170e7ad62d3_original-ratio.jpg" alt=“OurMemes” width="300" height="300"    class="center" >   
+   
+        
+        <style>
+        
+
+                
+            body
+            {
+                background-image: url("https://www.ecopetit.cat/wpic/mpic/90-904887_scenery-desktop-backgrounds-desktop-wallpapers-colorful.jpg");
+            }
+        </style>
+
+
+    </body>
