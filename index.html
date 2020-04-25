@@ -54,7 +54,33 @@
 				}
 				
 				else{
-                    
+                    if(document.getElementById("legobuilding").checked){
+						
+						legobuildingv = 25
+						intrested +=" Lego building "						
+
+					}
+					if(document.getElementById("paint").checked){
+						paintv = 25
+						intrested +=" Paint "						
+
+					}
+					if(document.getElementById("dance").checked){
+						dancev = 25
+						intrested +=" Dance "						
+
+
+					}
+			
+					if(document.getElementById("listeningtopodcasts").checked){
+						listeningtopodcastsv = 25
+						intrested +=" Listening to podcasts "						
+
+
+					}
+						RazanPer = legobuildingv + paintv + dancev + listeningtopodcastsv
+						localStorage.setItem("percentage", RazanPer);
+						localStorage.setItem("match_in", intrested);
 					window.location.href = "MemesPage.html"
 				}
 
